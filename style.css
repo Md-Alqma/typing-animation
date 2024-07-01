@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+  font-family: Playwrite IT Moderna;
+  background-color: aliceblue;
+}
+
+.text h1 {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 5px solid orange;
+  letter-spacing: 5px;
+  animation: typewriter 2s linear 1, blink 1s linear infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: orange;
+  }
+}
